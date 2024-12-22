@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晓晴宝贝</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <h1 class="logo">晓晴宝贝，一位快乐、自由、活泼的少女</h1>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="album.html">我的相册</a>
+            <a href="#contact">联系方式</a>
+        </nav>
+    </header>
+
+    <!-- 主视觉区域 -->
+    <section id="hero">
+        <div class="carousel">
+            <div class="carousel-content">
+                <h2>✨ 欢迎来到晓晴的快乐小天地 ✨</h2>
+                <p>一个充满阳光和欢笑的地方</p>
+            </div>
+            <div class="carousel-inner">
+                <img src="img/img1.jpg" alt="展示图片1">
+                <img src="img/img2.jpg" alt="展示图片2">
+                <img src="img/img3.jpg" alt="展示图片3">
+                <img src="img/img4.jpg" alt="展示图片4">
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- 内容区域 -->
+    <section id="content">
+        <div class="about">
+            <h2>关于我</h2>
+            <p>嗨！我是晓晴，一个热爱生活、充满活力的快乐少女。我喜欢探索新事物，享受每一个美好的瞬间。生活中的我阳光开朗，总是带着笑容，希望能把这份快乐传递给身边的每个人！✨</p>
+        </div>
+
+        <div class="skills">
+            <h2>我的爱好</h2>
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <i class="fas fa-camera"></i>
+                    <h3>摄影</h3>
+                    <p>记录生活中的美好瞬间</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-music"></i>
+                    <h3>音乐</h3>
+                    <p>听歌、唱歌都是我的最爱</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>生活</h3>
+                    <p>享受每一个精彩时刻</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体区域 -->
+    <section id="social">
+        <a href="#" class="social-icon" title="抖音"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-icon xiaohongshu" title="小红书">
+            <span>小红书</span>
+        </a>
+        <a href="#" class="social-icon bilibili" title="哔哩哔哩">
+            <i class="fab fa-bilibili"></i>
+            <span>B站</span>
+        </a>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 晓晴宝贝的快乐小天地. All rights reserved.</p>
+        <p>欢迎关注我的社交媒体账号 💕</p>
+    </footer>
+
+    <!-- 对话框 -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="notification-dot"></span>
+        </button>
+        
+        <div class="chat-box">
+            <div class="chat-header">
+                <h3>与晓晴对话</h3>
+                <button class="minimize-btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages">
+                <div class="message received">
+                    <div class="message-content">
+                        <p>你好呀！欢迎来到我的小天地~ 有什么想和我聊的吗？😊</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="输入消息..." id="messageInput">
+                    <button class="emoji-btn">
+                        <i class="far fa-smile"></i>
+                    </button>
+                </div>
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晓晴的相册</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <h1 class="logo">晓晴宝贝，一位快乐、自由、活泼的少女</h1>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="index.html#about">关于我</a>
+            <a href="album.html" class="active">我的相册</a>
+            <a href="index.html#contact">联系方式</a>
+        </nav>
+    </header>
+
+    <!-- 相册页面主体 -->
+    <section class="album-section">
+        <h2>✨ 我的相册 ✨</h2>
+        <!-- 视频展示区域 -->
+        <div class="video-section">
+            <h3>我的视频</h3>
+            <div class="video-container">
+                <video controls>
+                    <source src="img/video1.mp4" type="video/mp4">
+                    你的浏览器不支持视频播放。
+                </video>
+            </div>
+        </div>
+        
+        <h3>我的照片</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/img1.jpg" alt="照片1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img/img2.jpg" alt="照片2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img/img3.jpg" alt="照片3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img/img4.jpg" alt="照片4" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- 灯箱效果 -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="大图">
+        <button class="lb-prev" onclick="event.stopPropagation(); changeLightboxImage(-1)">&lt;</button>
+        <button class="lb-next" onclick="event.stopPropagation(); changeLightboxImage(1)">&gt;</button>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 晓晴宝贝的快乐小天地. All rights reserved.</p>
+        <p>欢迎关注我的社交媒体账号 💕</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
