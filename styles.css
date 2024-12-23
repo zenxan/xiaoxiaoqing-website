@@ -701,3 +701,19 @@ nav a.active::after {
     font-size: 0.95rem;
     display: inline-block;
 }
+
+.music-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.music-link:hover {
+    background: #ff5252;
+}
