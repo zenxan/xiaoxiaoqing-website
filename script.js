@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', prevSlide);
 
     // 自动轮播
-    let autoplayInterval = setInterval(nextSlide, 1000);
+    let autoplayInterval = setInterval(nextSlide, 3000);
 
     // 当用户与轮播图交互时暂停自动轮播
     const carousel_container = document.querySelector('.carousel');
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 当用户离开轮播图时恢复自动轮播
     carousel_container.addEventListener('mouseleave', () => {
-        autoplayInterval = setInterval(nextSlide, 1000);
+        autoplayInterval = setInterval(nextSlide, 3000);
     });
 
     // 添加灯箱功能
@@ -303,4 +303,15 @@ document.addEventListener('DOMContentLoaded', () => {
             sendMessage();
         }
     });
+
+    function initCarousel() {
+        // ... 其他轮播图初始化代码 ...
+        
+        // 将自动播放的时间间隔从默认值改为 5000 毫秒（5秒）
+        setInterval(() => {
+            showNextSlide();
+        }, 5000);  // 原来可能是 3000 或更短
+        
+        // ... 其他代码 ...
+    }
 }); 
